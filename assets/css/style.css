@@ -119,6 +119,7 @@
   --font-size-body1: 13.33px;
   --font-size-body2: 11.11px;
   --font-color-secundary: #59667a;
+  --dark-theme-h1-color: #698E2D;
 
 }
 
@@ -182,6 +183,10 @@ hr {
 h1{
   color: var(--strong-green);
   font-size: var(--font-size-h1); 
+}
+
+body.dark-only h1{
+  color: var(--dark-theme-h1-color);
 }
 
 h2{
