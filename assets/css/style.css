@@ -266,6 +266,11 @@ td{
   
 }
 
+.ButtonGroup{
+  display: flex;
+  gap: 8px
+}
+
 
 input[type=radio]{
   accent-color: var(--strong-green);
