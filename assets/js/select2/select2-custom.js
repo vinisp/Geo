@@ -21,6 +21,10 @@ setTimeout(function () {
       placeholder: "Selecione o financiador",
     });
 
+    $(".input-municipio").select2({
+      placeholder: "Selecione o município",
+    });
+
     //Limited Numbers
     $(".js-example-basic-multiple-limit").select2({
       maximumSelectionLength: 2,
