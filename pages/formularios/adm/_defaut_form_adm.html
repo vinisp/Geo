@@ -341,13 +341,13 @@
                     <div class="page-header">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h1>Cadastro de Instituição Gestora
+                                <h1>Cadastro de Núcleo
                                 </h1>
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
                                     <li class="breadcrumb-item"><a href="#">Administração</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Instituição gestora</a></li>
-                                    <li class="breadcrumb-item active">Cadastro de Instituição gestora</li>
+                                    <li class="breadcrumb-item"><a href="#">Núcleos</a></li>
+                                    <li class="breadcrumb-item active">Núcleos</li>
                                 </ol>
                             </div>
 
@@ -359,11 +359,21 @@
                         <div class="row">
                             <div class="card">
                                 <div class="card-header pb-0">
-                                    <h2>Instituição Gestora
+                                    <h2>Núcleo
                                     </h2>
                                 </div>
                                 <form class="form theme-form">
                                     <div class="card-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="exampleFormControlInput1">Número
+                                                    </label>
+                                                    <input class="form-control" id="exampleFormControlInput1"
+                                                        type="number" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col">
                                                 <div class="mb-3">
@@ -375,70 +385,17 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlInput1">Telefone
-                                                    </label>
-                                                    <input class="form-control phone_with_ddd"
-                                                        id="exampleFormControlInput1" type="text" placeholder="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlInput1">Celular
-                                                    </label>
-                                                    <input class="form-control phone_with_ddd"
-                                                        id="exampleFormControlInput1" type="text" placeholder="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlInput1">E-mail
-                                                    </label>
-                                                    <input class="form-control" id="exampleFormControlInput1"
-                                                        type="email" placeholder="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlInput1">Endereço
-                                                    </label>
-                                                    <input class="form-control" id="exampleFormControlInput1"
-                                                        type="text" placeholder="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlInput1">Complemento
-                                                    </label>
-                                                    <input class="form-control" id="exampleFormControlInput1"
-                                                        type="text" placeholder="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlInput1">Bairro
-                                                    </label>
-                                                    <input class="form-control" id="exampleFormControlInput1"
-                                                        type="text" placeholder="">
-                                                </div>
+                                            <label class="col-sm-3 col-form-label">Descrição</label>
+                                            <div class="col-sm-9">
+                                                <textarea class="form-control" rows="5" cols="5"
+                                                    placeholder="Insira a descrição..."></textarea>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col">
                                                 <div class="mb-3">
                                                     <label class="form-label"
-                                                        for="exampleFormControlSelect9">Município</label>
+                                                        for="exampleFormControlSelect9">Instituição Gestora</label>
                                                     <select class="form-select digits" id="exampleFormControlSelect9">
                                                         <option>---------</option>
                                                         <option>1</option>
@@ -451,22 +408,21 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col">
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="exampleFormControlInput1">Gestor
-                                                    </label>
-                                                    <input class="form-control" id="exampleFormControlInput1"
-                                                        type="text" placeholder="">
-                                                </div>
-                                            </div>
+                                            <label class="col-form-label">Municípios</label>
+                                            <select class="input-municipio" multiple="multiple">
+                                                <option value="AL">Alabama</option>
+                                                <option value="WY">Wyoming</option>
+                                                <option value="WY">Coming</option>
+                                                <option value="WY">Hanry Die</option>
+                                                <option value="WY">John Doe</option>
+                                            </select>
                                         </div>
                                         <!-- Default Textbox start-->
                                         <!-- Default Textbox end-->
                                     </div>
                                     <div class="card-footer align-3-buttons">
                                         <div class="center">
-                                            <a class="btn btn-primary"
-                                                href="../../adm/instituicoes_gestoras.html  ">Voltar para
+                                            <a class="btn btn-primary" href="../../adm/nucleos.html">Voltar para
                                                 Listagem</a>
                                         </div>
                                         <div class="text-end">
