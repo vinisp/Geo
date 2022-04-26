@@ -251,6 +251,10 @@ td{
   border-left: var(--border-default);
 }
 
+th[colspan="2"]{
+  text-align: center;
+}
+
 .twoColumns{
   display: flex;
   font-size: var(--font-size-body2);
@@ -258,12 +262,16 @@ td{
 
 .twoColumns div{
   flex: 0 0 50%;
-  padding: 2px 4px ;
+  text-align: center;
 }
 
 .twoColumns div:nth-child(1){
   border-right: var(--border-default);
-  
+}
+
+.twoColumns div:nth-child(2){
+ 
+  margin-left: 8px;
 }
 
 .ButtonGroup{
