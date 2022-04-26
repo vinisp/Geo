@@ -24,6 +24,12 @@ setTimeout(function () {
     $(".input-municipio").select2({
       placeholder: "Selecione o município",
     });
+    $(".input-nivel-acesso").select2({
+      placeholder: "Escolha os níveis de acesso",
+    });
+    $(".input-instituicao").select2({
+      placeholder: "Selecione as instituições",
+    });
 
     //Limited Numbers
     $(".js-example-basic-multiple-limit").select2({
