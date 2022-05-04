@@ -21,6 +21,10 @@ setTimeout(function () {
       placeholder: "Selecione o financiador",
     });
 
+    $(".input-patrocinador").select2({
+      placeholder: "Selecione o patrocinador",
+    });
+
     $(".input-municipio").select2({
       placeholder: "Selecione o município",
     });

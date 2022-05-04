@@ -42,6 +42,7 @@
         <link rel="stylesheet" type="text/css" href="../../../assets/css/prism.css">
         <link rel="stylesheet" type="text/css" href=".../../../assets/css/vector-map.css">
         <link rel="stylesheet" type="text/css" href="../../../assets/css/datatables.css">
+        <link rel="stylesheet" type="text/css" href="../../../assets/css/select2.css">
         <!-- Plugins css Ends-->
         <!-- Bootstrap css-->
         <link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.css">
@@ -375,7 +376,7 @@
                                         <div class="ButtonGroup"><a
                                                 href="../../formularios/usuario/formulario_programa_municipal.html"
                                                 class="btn btn-primary">Adiconar</a>
-                                            <button class="btn btn-primary" onclick="filtrar()">Filtrar</button>
+                                            <button class="btn btn-primary" onclick="showModal('modalContainer')">Filtrar</button>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -995,6 +996,96 @@
                 </footer>
             </div>
         </div>
+        <!--Modal do filtro-->
+
+        <div class="modalContainer" id="modalContainer">
+            
+            <div class="modalCustom">
+                <button class="btnModal">X</button>
+                <div class="container-fluid dashboard-default-sec">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-header pb-0">
+                                <h2>Filtros</h2>
+                            </div>
+                            <form class="form theme-form">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label class="form-label" for="exampleFormControlInput1">Nome do
+                                                    Projeto</label>
+                                                <input class="form-control" id="exampleFormControlInput1"
+                                                    type="text" placeholder="Programa 1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Default Textbox start-->
+                                    
+                                      <div class="col">
+                                        <div class="form-group m-t-15 m-checkbox-inline mb-3 custom-radio-ml">
+                                          <div class="radio radio-primary">
+                                            <input id="radioinline1" type="radio" name="radio1" value="option1">
+                                            <label class="mb-0" for="radioinline1">Meus Projetos</label>
+                                          </div>
+                                          <div class="radio radio-primary">
+                                            <input id="radioinline2" type="radio" name="radio1" value="option1">
+                                            <label class="mb-0" for="radioinline2">Todos os Projetos</label>
+                                          </div>
+                                         
+                                        </div>
+                                      </div>
+
+                                    <div class="row">
+                                        <label class="col-form-label">Parceiros</label>
+                                        <select class="input-parceiro" multiple="multiple">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="row">
+                                        <label class="col-form-label">Municípios</label>
+                                        <select class="input-municipio" multiple="multiple">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-form-label">Patrocinadores</label>
+                                        <select class="input-patrocinador" multiple="multiple">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Default Textbox end-->
+
+                                </div>
+                                <div class="card-footer align-3-buttons">
+                                  
+                                    <div class="text-end">
+                                        <button class="btn btn-primary" type="submit">Filtrar</button>
+                                        <input class="btn btn-light"  type="reset" value="Limpar Filtro">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <!-- latest jquery-->
         <script src="../../../assets/js/jquery-3.5.1.min.js"></script>
         <!-- feather icon js-->
@@ -1009,6 +1100,8 @@
         <!-- Plugins JS start-->
         <script src="../../../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
         <script src="../../../assets/js/datatable/datatables/datatable.custom.js"></script>
+        <script src="../../../assets/js/select2/select2.full.min.js"></script>
+        <script src="../../../assets/js/select2/select2-custom.js"></script>
         <!-- Plugins JS Ends-->
         <!-- Theme js-->
         <script src="../../../assets/js/script.js"></script>
